@@ -1,0 +1,7 @@
+version: "3"
+services:
+    kcptun:
+        restart: always
+        container_name: "kcptun"
+        network_mode: "host"
+        build: ./kcptun
