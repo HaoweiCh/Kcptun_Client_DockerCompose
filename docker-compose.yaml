@@ -1,7 +1,20 @@
 version: "3"
 services:
-    kcptun:
+    kcptun0:
         restart: always
-        container_name: "kcptun"
+        container_name: "kcptun0"
         network_mode: "host"
         build: ./kcptun
+        command: ["./client_linux_amd64", "-r", "66.23.193.236:443", "-l", "0.0.0.0:1088", "-mode", "fast3"]
+    kcptun1:
+        restart: always
+        container_name: "kcptun1"
+        network_mode: "host"
+        build: ./kcptun
+        command: ["./client_linux_amd64", "-r", "69.85.88.111:443", "-l", "0.0.0.0:1089", "-mode", "fast2"]
+    kcptun2:
+        restart: always
+        container_name: "kcptun2"
+        network_mode: "host"
+        build: ./kcptun
+        command: ["./client_linux_amd64", "-r", "69.85.88.111:8080", "-l", "0.0.0.0:1090", "-mode", "fast3"]
