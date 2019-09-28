@@ -1,0 +1,2 @@
+kcptun/client_linux_amd64 filter=lfs diff=lfs merge=lfs -text
+kcptun/server_linux_amd64 filter=lfs diff=lfs merge=lfs -text
