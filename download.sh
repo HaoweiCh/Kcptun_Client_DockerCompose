@@ -1,0 +1,2 @@
+cd kcptun && wget https://github.com/xtaci/kcptun/releases/download/v20190924/kcptun-linux-amd64-20190924.tar.gz -O kcptun-linux-amd64.tar.gz
+tar xvf kcptun-linux-amd64.tar.gz && upx * && rm kcptun-linux-amd64.tar.gz && cd -
